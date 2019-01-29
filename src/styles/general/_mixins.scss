@@ -1,0 +1,23 @@
+// Transition
+@mixin transition($property: all, $duration: .2s, $ease: ease-in-out, $delay: 0s) {
+    transition: $property $duration $ease $delay;
+}
+
+// Media Queries
+@mixin mq($smallerValue, $biggerValue) {
+	@media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media (min-width: 0) and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media (min-width: 0) and (max-width: 511px) {
+		@content;
+	}
+}

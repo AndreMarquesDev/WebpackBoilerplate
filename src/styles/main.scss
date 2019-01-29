@@ -1,0 +1,18 @@
+// General imports //
+
+@import 'general/reset';
+@import 'general/colors';
+@import 'general/fonts';
+@import 'general/mixins';
+@import 'general/config';
+@import 'general/animations';
+@import 'general/skeleton';
+@import 'general/components';
+@import 'general/flickity';
+
+// Module imports //
+
+@import 'modules/content';
+@import 'modules/footer';
+@import 'modules/mainNav';
+@import 'modules/slider';
