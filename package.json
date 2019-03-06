@@ -3,6 +3,10 @@
     "version": "1.0.0",
     "description": "A webpack boilerplate for static websites",
     "private": true,
+    "browserslist": [
+        "> 0.25%",
+        "not dead"
+    ],
     "scripts": {
         "start": "webpack-dev-server --open --config webpack.dev.js",
         "build": "webpack --config webpack.prod.js"
