@@ -1,14 +1,33 @@
 # Webpack Boilerplate
-Webpack based starter kit boilerplate for a new project
+Webpack based boilerplate for a new project  
 
-https://andremarquesdev.github.io/WebpackBoilerplate
+## About
 
+### Features / Contents
 
-This is a Progressive Web App
+Based on [Tris' boilerplate](https://github.com/tr1s/tris-webpack-boilerplate)  
+PWA ready  
 
-André Marques
-https://github.com/AndreMarquesDev
+### Author
 
+André Marques  
+[GitHub](https://github.com/AndreMarquesDev)  
+[CodePen](https://codepen.io/AndreMarquesDev)  
+[Twitter](https://twitter.com/BazingaCS)
 
-Based on Tris' boilerplate
-https://github.com/tr1s/tris-webpack-boilerplate
+### License
+
+MIT
+
+## Build Setup
+
+```bash
+# Install dependencies
+npm i
+
+# Run locally
+npm start
+
+# Build for production with minification
+npm run build
+```
