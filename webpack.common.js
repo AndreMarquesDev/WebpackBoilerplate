@@ -80,7 +80,7 @@ module.exports = {
         }]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Index',
             filename: 'index.html',

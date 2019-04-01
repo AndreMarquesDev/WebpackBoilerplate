@@ -7,7 +7,7 @@ const merge = require('webpack-merge');
     CompressionPlugin = require('compression-webpack-plugin'),
 
     FaviconsWebpackPlugin = require('favicons-webpack-plugin'),
-    OfflinePlugin = require('offline-plugin');
+    WorkboxPlugin = require('workbox-webpack-plugin');
 
 
 module.exports = merge(common, {
@@ -45,6 +45,10 @@ module.exports = merge(common, {
                 windows: true
             }
         }),
-        new OfflinePlugin()
+        new WorkboxPlugin.GenerateSW({
+            clientsClaim: true,
+            skipWaiting: true,
+            cleanupOutdatedCaches: true
+        })
     ]
 });
