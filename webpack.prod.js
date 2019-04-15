@@ -19,6 +19,10 @@ module.exports = merge(common, {
                 test: /\.js(\?.*)?$/i,
                 parallel: true,
                 sourceMap: true,
+                terserOptions: {
+                    ie8: true,
+                    safari10: true
+                }
             })
         ]
     },
@@ -29,13 +33,13 @@ module.exports = merge(common, {
         new ImageminPlugin({
             test: /\.(jpe?g|png|gif|svg)$/i,
             gifsicle: { // lossless gif compressor
-                optimizationLevel: 9
+                optimizationLevel: 3
             },
             pngquant: ({ // lossy png compressor, remove for default lossless
-                quality: '75'
+                quality: '65'
             }),
             plugins: [imageminMozjpeg({ // lossy jpg compressor, remove for default lossless
-                quality: '75'
+                quality: '65'
             })]
         }),
         new FaviconsWebpackPlugin({
